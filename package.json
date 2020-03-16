@@ -1,0 +1,28 @@
+{
+  "name": "@luaduarte04/lotide",
+  "version": "1.0.0",
+  "description": "A mini clone of the [Lodash](https://lodash.com) library.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "^4.2.0"
+  },
+  "devDependencies": {
+    "mocha": "^7.1.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luaduarte04/lotide.git"
+  },
+  "author": "Luana Duarte",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luaduarte04/lotide/issues"
+  },
+  "homepage": "https://github.com/luaduarte04/lotide#readme"
+}

@@ -1,26 +1,18 @@
-// FUNCTION IMPLEMENTATION
-const assertEqual = function(actual, expected) {
-  //compare the actual and expected values
-  if (actual === expected) {
-    //if they match, show in console assertion passed....
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    //if they dont match, show in console assertion failed
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
-const countLetters = function (takeString) {
-  finalCount = {};
-  for (let count of takeString) {
-    if(finalCount[count]) {
-      finalCount[count] += 1;
-    } else {
-      finalCount[count] = 1;
+const countLetters = function (sentence) {
+  let result = {};
+  for (let i = 0; i < sentence.length; i++) {
+    let letters = sentence[i];
+    if (sentence.charAt(i) !=  " ") {
+      if (result[letters]) {
+        result[letters] +=1;
+      }
+      else {
+        result[letters] = 1;
+      }
     }
   }
-  console.log(finalCount);
+  return(result);
 };
 
-const mySentece = "lulu baba nana caca";
-const countLettersResult = countLetters(mySentece);
+
+module.exports = countLetters;
